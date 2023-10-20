@@ -21,4 +21,95 @@ body {
 }
 
 /* STYLES */
-/* Write your CSS below */
+#title {
+  background-image: url(../images/apple-pie.jpg);
+  background-size: cover;
+  height: 800px;
+  margin: auto;
+  color: white;
+  font-size: 5em;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+
+#introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 5em;
+  width: 1500px;
+  border-bottom: lightslategray solid 3px;
+
+}
+
+#introduction h3 {
+  width: 1500px;
+  margin: 0 auto; 
+  font-size: 44px;
+  text-align: justify;
+}
+
+#introduction img {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#ingredients {
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  margin: 5em auto 0;
+  border-bottom: lightslategray solid 3px;
+}
+
+#ingredients h2 {
+  font-size: 48px;
+  font-weight: 325;
+}
+#ingredients ul {
+  margin-top: 30px;
+  font-size: 44px;
+  list-style: none; 
+}
+#ingredients li{
+  margin-top: 15px;
+}
+
+#ingredients img {
+  width: 600px;
+  margin: 50px auto;
+  height: auto;
+}
+
+#directions {
+  width: 1500px;
+  display: flex;
+  flex-direction: column;
+  margin: 5em auto 200px;
+}
+
+#directions h2 {
+  font-size: 48px;
+  font-weight: 325;
+}
+
+#directions ol {
+  margin-top: 30px;
+  font-size: 44px;
+  list-style: none;
+}
+
+#directions ol > li {
+  counter-increment: listcounter;
+  margin-top: 10px;
+}
+
+#directions ol > li::before {
+  content: counter(listcounter) ")";
+}
